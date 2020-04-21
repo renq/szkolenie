@@ -21,6 +21,9 @@ final class ProductsApiClient
         $client = new Client(['base_uri' => $this->apiUrl]);
 
         $response = $client->request('POST', $this->apiUrl, [
+            'headers' => [
+                'Content-Type' => 'application/json'
+            ],
             'json' => json_encode([
                 'name' => $productRequestDto->getName(),
                 'description' => $productRequestDto->getDescription(),
@@ -30,11 +33,6 @@ final class ProductsApiClient
 
         $responseJson = json_decode((string)$response->getBody(), true);
 
-        return new ProductResponseDto(
-            $responseJson['id'],
-            $responseJson['name'],
-            $responseJson['description'],
-            $responseJson['image']
-        );
+        return new ProductResponseDto($responseJson['id']);
     }
 }
