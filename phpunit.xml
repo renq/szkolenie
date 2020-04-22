@@ -12,6 +12,9 @@
                     <element key="0">
                         <string>Products API</string>
                     </element>
+                    <element key="1">
+                        <string>Tests\App\Api\ConsumerProductsTest</string>
+                    </element>
                 </array>
             </arguments>
         </listener>
@@ -30,9 +33,11 @@
         <env name="PACT_MOCK_SERVER_HOST" value="localhost"/>
         <env name="PACT_MOCK_SERVER_PORT" value="7200"/>
         <env name="PACT_CONSUMER_NAME" value="someConsumer"/>
-        <env name="PACT_CONSUMER_VERSION" value="1.0.0"/>
+        <env name="PACT_CONSUMER_VERSION" value="1.0.1"/>
         <env name="PACT_PROVIDER_NAME" value="someProvider"/>
-        <env name="PACT_BROKER_URI" value="http://localhost"/>
+        <env name="PACT_BROKER_URI" value="http://localhost:8080"/>
+        <env name="PACT_OUTPUT_DIR" value="./pact"/>
+        <env name="PACT_CONSUMER_TAG" value="master"/>
         <!-- <env name="PACT_BROKER_BEARER_TOKEN" value="someToken"/> -->
         <env name="PACT_CORS" value="true"/>
     </php>

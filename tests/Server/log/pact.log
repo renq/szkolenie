@@ -1,0 +1,10 @@
+# Logfile created on 2020-04-22 11:54:54 +0200 by logger.rb/47272
+I, [2020-04-22T11:54:54.623978 #31992]  INFO -- : Running example 'Verifying a pact between someConsumer and someProvider A post request to /api/products with POST /api/products returns a response which has status code 200'
+I, [2020-04-22T11:54:54.624269 #31992]  INFO -- : Sending POST request to path: "/api/products" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type"}, see debug logs for body
+D, [2020-04-22T11:54:54.624362 #31992] DEBUG -- : body :{"name":"Test product","description":"Test product description","image":"A product image.jpg"}
+I, [2020-04-22T11:54:54.682008 #31992]  INFO -- : Running example 'Verifying a pact between someConsumer and someProvider A post request to /api/products with POST /api/products returns a response which has a matching body'
+I, [2020-04-22T11:54:54.682257 #31992]  INFO -- : Sending POST request to path: "/api/products" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type"}, see debug logs for body
+D, [2020-04-22T11:54:54.682347 #31992] DEBUG -- : body :{"name":"Test product","description":"Test product description","image":"A product image.jpg"}
+I, [2020-04-22T11:54:54.689812 #31992]  INFO -- : Running example 'Verifying a pact between someConsumer and someProvider A post request to /api/products with POST /api/products returns a response which includes headers "Content-Type" which equals "application/json"'
+I, [2020-04-22T11:54:54.690491 #31992]  INFO -- : Sending POST request to path: "/api/products" with headers: {"CONTENT_TYPE"=>"application/json", "HTTP_X_PACT_ORIGINAL_HEADER_NAMES"=>"Content-Type"}, see debug logs for body
+D, [2020-04-22T11:54:54.691324 #31992] DEBUG -- : body :{"name":"Test product","description":"Test product description","image":"A product image.jpg"}
